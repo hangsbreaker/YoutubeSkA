@@ -1,0 +1,24 @@
+{
+    "name": "Youtube SkA",
+    "version": "1.0.0",
+    "description": "Youtube Skip Ads is automation for user who too lazy to click skip ads",
+    "manifest_version": 3,
+    "author": "Rachmadany",
+    "action": {
+        "default_popup": "index.html",
+        "default_title": "Youtube SkA"
+    },
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": [
+                "content.js"
+            ]
+        }
+    ]
+}
